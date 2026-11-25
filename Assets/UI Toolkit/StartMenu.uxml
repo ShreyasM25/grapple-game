@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:GroupBox name="topGB" style="flex-shrink: 1; flex-grow: 1; height: 50%;" />
+    <ui:GroupBox name="botGB" style="flex-shrink: 1; flex-grow: 1; height: 50%;">
+        <ui:GroupBox name="emptyGB" style="flex-grow: 1; height: 50%; flex-shrink: 1;" />
+        <ui:GroupBox name="contentGB" style="flex-shrink: 1; flex-grow: 1; height: 50%; flex-direction: row;">
+            <ui:GroupBox name="dropdownGB" style="width: 50%; flex-shrink: 1; height: 100%; justify-content: flex-end; align-items: flex-end;">
+                <ui:DropdownField label="Levels" index="-1" name="LevelSelector" style="width: 70%; height: 50%; margin-bottom: 5%; margin-right: 1%; -unity-font: resource(&apos;FlatSkin/Font/Roboto-Black&apos;); font-size: 75%; -unity-text-align: middle-left;" />
+            </ui:GroupBox>
+            <ui:GroupBox name="startGB" style="width: 50%; flex-shrink: 1; height: 100%; justify-content: flex-end;">
+                <ui:Button text="Start" display-tooltip-when-elided="true" name="StartButton" style="justify-content: flex-start; align-items: stretch; width: 60%; height: 50%; margin-left: 1%; margin-bottom: 5%; font-size: 75%; -unity-font: resource(&apos;FlatSkin/Font/Roboto-Black&apos;);" />
+            </ui:GroupBox>
+        </ui:GroupBox>
+    </ui:GroupBox>
+</ui:UXML>
